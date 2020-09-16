@@ -21,12 +21,19 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         
         // MARK: - 1️⃣ emojiArray  الي  animal قم باضافه متغير
+        emojiArray.append(animal)
         
+        if animal == "قطة" {
+            emojiArray.append("🐱")
+        }
         
+        if animal == "ثعلب" {
+            emojiArray.append("🦊")
+        }
         
-        
-        
-        
+        if animal == "عصفور" {
+            emojiArray.append("🐤")
+        }
         
         // MARK: - لا تقم بتغيير هذا السطر⚠️⚠️
         animalTextField.text = ""
@@ -37,8 +44,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
             animalEmojiLabel.text! += label
         }
         /// **BONUS**: 🎁 قم بمسح مكونات المصفوفة بعد عرضها
-   
     
+        emojiArray.removeAll()
         
         
         
